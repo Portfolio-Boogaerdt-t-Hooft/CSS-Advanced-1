@@ -1,0 +1,54 @@
+$blogColor: #e17b77;
+$twitterColor: #00aced;
+$linkedinColor:#007bb6;
+$facebookColor:#3b5998;
+$githubColor:#333;
+
+.navlinks a{
+    position: absolute; 
+    right: -190px; 
+    padding:20px; 
+    width: 190px; 
+    font-size: 16px; 
+    transition: 0.3s;
+    border-radius: 0 5px 5px 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    &:hover{
+        right: 0; 
+        text-decoration: underline;
+    }
+}
+
+.navlinks{
+    &__blog {
+    background-color: $blogColor; 
+    top: 100px;  
+}
+    &__twitter {
+    background-color: $twitterColor;
+    top: 160px;
+}
+    &__linkedin{
+    background-color:$linkedinColor;
+    top: 220px;
+}
+    &__facebook {
+    background-color: $facebookColor;
+    top: 280px;
+}
+    &__github{
+    background-color: $githubColor;
+    top: 340px;
+}
+}
+
+.fa{
+    padding-right:20px;
+    border-left:0px;
+}
+
+

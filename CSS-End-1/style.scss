@@ -1,0 +1,44 @@
+$bodyBackground: #c3cfe2;
+$borderWhite: #fff;
+$footerBackground: #686de0;
+$textColor: rgb(80, 77, 77);
+
+body{
+    background: $bodyBackground;
+}
+
+.border{
+    border:50px;
+    padding:50px;
+    margin:50px;
+    text-align: center;
+    &__text {
+    background: $borderWhite;
+    padding:30px;
+    margin-bottom: 0px;
+    border-radius: 25px 25px 0px 0px;
+    font-size: 20px;
+    color:$textColor;
+    padding-bottom: 80px;   
+    }
+    &__footer {
+        background: $footerBackground;
+        border-radius: 0px 0px 25px 25px; 
+    
+}
+
+.testimonial-footer{
+    &__profilepic {
+        transform: translateY(-50px);
+    }  
+    &__website {
+    padding:10px;
+    padding-bottom: 30px;
+    color:rgb(152, 170, 230);
+    }
+    &__name {
+    color: $borderWhite;
+    font-size: 25px;
+    }
+    }
+}

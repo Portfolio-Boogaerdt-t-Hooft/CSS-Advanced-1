@@ -1,0 +1,64 @@
+$background: #c3cfe2;
+$buttonColor: blue;
+$colorWhite: white;
+
+body {
+    background: $background; 
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container {
+    position: relative;
+    width: 70%;
+   &__image{
+    opacity: 1;
+    
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    padding: 20px;
+    border-radius: 30px;
+   }
+   &__middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+   }
+}
+.container-middle{
+   &__text{
+    background-color: $buttonColor;
+    color: $colorWhite;
+    font-size: 16px;
+    padding: 16px 32px;
+   }
+}
+
+
+.container:hover .container__image {
+    opacity: 0.05;
+}
+
+.container:hover .container__middle {
+    opacity: 1;
+}
+
+
+@media (min-width:768px){
+    body{
+        grid-template-columns: 1fr 1fr;   
+    }
+}
+
+@media (min-width: 1024px){
+    body{
+        grid-template-columns: 1fr 1fr 1fr;
+    }  
+} 
